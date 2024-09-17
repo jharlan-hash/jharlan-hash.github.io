@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>jack&#39;s blog!</title>
+    <link>/</link>
+    <description>Recent content on jack&#39;s blog!</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 16 Sep 2024 18:44:01 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Serpentos</title>
+      <link>/serpentos/</link>
+      <pubDate>Mon, 16 Sep 2024 18:44:01 -0500</pubDate>
+      
+      <guid>/serpentos/</guid>
+      <description>&lt;h1 id=&#34;serpent-os-a-new-linux-distro&#34;&gt;Serpent OS: A new Linux distro&lt;/h1&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In a world where more and more distros are just another spin of Ubuntu, Debian, or Arch, a new, independent distro
+making its way onto the scene is a real refresher. Every time that a new independent distro like the one we&amp;rsquo;re going to
+be talking about today comes out, it brings with it some major changes to the way that people think about distros. This
+has happened time and time again, from when &lt;a href=&#34;https://voidlinux.org/&#34;&gt;Void Linux&lt;/a&gt; came out, rethinking the
+init system, to when NixOS rethought the way that operating systems could be installed and work. However, these famously
+independent distributions came out many years ago. Actually, they came out so many years ago that it was before I was
+even born! I hope that doesn&amp;rsquo;t make some of you feel old, but it&amp;rsquo;s true. A Linux distro hasn&amp;rsquo;t come out in many years
+that has completely changed the way that people think of operating systems, but I believe that can change with SerpenOS.&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;serpent-os-a-new-linux-distro&#34;&gt;Serpent OS: A new Linux distro&lt;/h1&gt;
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;In a world where more and more distros are just another spin of Ubuntu, Debian, or Arch, a new, independent distro
+making its way onto the scene is a real refresher. Every time that a new independent distro like the one we&amp;rsquo;re going to
+be talking about today comes out, it brings with it some major changes to the way that people think about distros. This
+has happened time and time again, from when &lt;a href=&#34;https://voidlinux.org/&#34;&gt;Void Linux&lt;/a&gt; came out, rethinking the
+init system, to when NixOS rethought the way that operating systems could be installed and work. However, these famously
+independent distributions came out many years ago. Actually, they came out so many years ago that it was before I was
+even born! I hope that doesn&amp;rsquo;t make some of you feel old, but it&amp;rsquo;s true. A Linux distro hasn&amp;rsquo;t come out in many years
+that has completely changed the way that people think of operating systems, but I believe that can change with SerpenOS.&lt;/p&gt;
+&lt;h2 id=&#34;backstory-on-serpent&#34;&gt;Backstory on Serpent&lt;/h2&gt;
+&lt;p&gt;Serpent was initally announced somewhere in late summer 2020 by Ikey Doherty, the current CEO of &lt;a href=&#34;https://github.com/lispysnake&#34;&gt;Lispy Snake&lt;/a&gt;
+and one of the creators of the &lt;a href=&#34;https://getsol.us/&#34;&gt;Solus&lt;/a&gt; operating system, started full development somewhere around
+July 2020. Now, a little less than 4 years later, some prealpha ISOs of the operating system are finally beginning to
+circulate. Yes, it took a long time for them to get these ISOs going, but I don&amp;rsquo;t blame them. SerpentOS is packed with
+amazing features, and I&amp;rsquo;m really excited to go through them all.&lt;/p&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;p&gt;In the initial announcement by Ikey Doherty, he listed several goals for this new operating system, which I would like
+to go through here.&lt;/p&gt;
+&lt;p&gt;One of the first things announced was the &lt;code&gt;systemd init system&lt;/code&gt;. Now I know many people have their opinions on their
+init systems, but I think that this is a good thing. Not working on a new init system saved so much time that was spent
+in many other, very useful places. Also, the final benefit of using systemd as their init is the amount of tooling that is
+&lt;em&gt;already available&lt;/em&gt; for them to pick up and use to create the most stable and easy-to-use system they can.&lt;/p&gt;
+&lt;p&gt;Another exciting feature is &lt;code&gt;wayland-only&lt;/code&gt; support, another slightly controversial topic. I am totally in favor of
+this change, and I really do think that it is time for X to go the way of the dinosaurs. X is a relic of the past, and
+as we move forward, we need to realize that we can leave things behind.&lt;/p&gt;
+&lt;p&gt;The final thing I will touch on is the adoption of clang and llvm-based infrastructure all the way down. And yes, this
+means no GNUtils, down to using musl instead of libc. This is great not only for diversity in the linux ecosystem, but
+for schooling all the people that think they&amp;rsquo;re clever by correcting you on your usage GNU + Linux, a scenario that no
+doubt many of you have experienced before:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;I use Linux as my operating system,&amp;rdquo; I state proudly to the unkempt, bearded man. He swivels around in his desk chair
+with a devilish gleam in his eyes, ready to mansplain with extreme precision. &amp;ldquo;Actually&amp;rdquo;, he says with a grin,
+&amp;ldquo;Linux is just the kernel. You use GNU+Linux!&amp;rsquo; I don&amp;rsquo;t miss a beat and reply with a smirk,
+&amp;ldquo;I use Serpent, a distro that doesn&amp;rsquo;t include the GNU coreutils, or any other GNU code. It&amp;rsquo;s Linux, but it&amp;rsquo;s not GNU+Linux.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The smile quickly drops from the man&amp;rsquo;s face. His body begins convulsing and he foams at the mouth and drops to the floor with a sickly thud. As he writhes around he screams &amp;ldquo;I-IT WAS COMPILED WITH GCC! THAT MEANS IT&amp;rsquo;S STILL GNU!&amp;rdquo; Coolly, I reply &amp;ldquo;If windows was compiled with gcc, would that make it GNU?&amp;rdquo; I interrupt his response with &amp;ldquo;-and work is being made on the kernel to make it more compiler-agnostic. Even you were correct, you wont be for long.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;With a sickly wheeze, the last of the man&amp;rsquo;s life is ejected from his body. He lies on the floor, cold and limp, never to correct again.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;tooling&#34;&gt;Tooling&lt;/h2&gt;
+&lt;p&gt;No surprises here, all the tooling is in Rust. Honestly, I love it. Rust is such a safe language, and I personally prefer
+the programs that keep my computer running to be safe, and crash-resistent. The team at Lispy Snake has done a great job
+with these tools and I think that they need a bit more recognition for it.&lt;/p&gt;
+&lt;p&gt;The first piece of tooling is the &lt;a href=&#34;https://serpentos.com/moss/&#34;&gt;moss&lt;/a&gt; package manager. This package manager is really
+interesting regarding the way that it handles transactions (what they are calling package installations).
+According to the website, moss &lt;code&gt;manages the entire operating system via content addressable storage. Every single file from every package is deduplicated via a hash-based addressing scheme in the moss store, allowing us to produce new system roots on the fly.&lt;/code&gt;
+What this can mean for the average user is that each time they install a package, you can create a new root filesystem
+to install the package directly into, which can make it a lot easier to revert all changes, a great way to minimize
+problems.&lt;/p&gt;
+&lt;p&gt;Another interesting tool is &lt;a href=&#34;https://serpentos.com/boulder/&#34;&gt;boulder&lt;/a&gt;. This is a build system, similiar to PKGBUILDS in
+Arch Linux that streamlines the package creation process significantly for developers.&lt;/p&gt;
+&lt;p&gt;In these first releases, they are utilizing a tool called &lt;a href=&#34;https://github.com/serpent-os/lichen&#34;&gt;lichen&lt;/a&gt; to deal with
+their installation. Even though it&amp;rsquo;s very early days and I&amp;rsquo;m not sure if it&amp;rsquo;s going to make it into the final release,
+I do enjoy using it. It&amp;rsquo;s a pretty CLI tool, and I&amp;rsquo;m a huge sucker for a pretty CLI tool.&lt;/p&gt;
+&lt;p&gt;Finally, they include a tool called &lt;a href=&#34;https://github.com/serpent-os/blsforme&#34;&gt;blsforme&lt;/a&gt;, which (as I currently understand)
+is their replacement for GRUB, or their bootloader. This could be completely incorrect, as I am not very familiar with
+this tool.&lt;/p&gt;
+&lt;h2 id=&#34;final-thoughts&#34;&gt;Final Thoughts&lt;/h2&gt;
+&lt;p&gt;I am really excited to see how this project turns out. Personally, I have been daily driving it for the last few weeks,
+using the COSMIC desktop &amp;amp; its tiling features. I love it, but am definitely missing the community aspect of the AUR.
+I love the independence of the operating system, and I think that it deserves a lot more attention from the community.&lt;/p&gt;
+&lt;p&gt;If you liked the post, contact me at &lt;a href=&#34;mailto:jharlancheese01@gmail.com&#34;&gt;jharlancheese01@gmail.com&lt;/a&gt;! I&amp;rsquo;d love to hear what you thought of my first blog post.
+I really put a lot of work into this project, and I&amp;rsquo;m glad that I was able to complete this first thing. Hopefully,
+there will be many more.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>/testing/</link>
+      <pubDate>Tue, 10 Sep 2024 00:02:51 -0500</pubDate>
+      
+      <guid>/testing/</guid>
+      <description>&lt;h1 id=&#34;heading-1&#34;&gt;Heading 1&lt;/h1&gt;
+&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;
+&lt;h3 id=&#34;heading-3&#34;&gt;Heading 3&lt;/h3&gt;
+&lt;h4 id=&#34;heading-4&#34;&gt;Heading 4&lt;/h4&gt;
+&lt;h5 id=&#34;heading-5&#34;&gt;Heading 5&lt;/h5&gt;
+&lt;h6 id=&#34;heading-6&#34;&gt;Heading 6&lt;/h6&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;BOLD TEXT&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;italix&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The beauty and charm of the wilderness are his for the asking, for the edges of the wilderness lie close beside the beaten roads of the present travel.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/* return 0 on error or return the data */
+char *cli_read(int c){
+    static char buf[512];
+
+    memset(buf, 0, 512);
+    if (read(c, buf, 511) &amp;lt; 0){
+        error = &amp;#34;read() error in cli_read()&amp;#34;;
+        return 0;
+    } else {
+        return buf;
+    }
+}
+&lt;/code&gt;&lt;/pr</description>
+      <content>&lt;h1 id=&#34;heading-1&#34;&gt;Heading 1&lt;/h1&gt;
+&lt;h2 id=&#34;heading-2&#34;&gt;Heading 2&lt;/h2&gt;
+&lt;h3 id=&#34;heading-3&#34;&gt;Heading 3&lt;/h3&gt;
+&lt;h4 id=&#34;heading-4&#34;&gt;Heading 4&lt;/h4&gt;
+&lt;h5 id=&#34;heading-5&#34;&gt;Heading 5&lt;/h5&gt;
+&lt;h6 id=&#34;heading-6&#34;&gt;Heading 6&lt;/h6&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;BOLD TEXT&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;italix&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The beauty and charm of the wilderness are his for the asking, for the edges of the wilderness lie close beside the beaten roads of the present travel.&amp;rdquo;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ol&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;First item&lt;/li&gt;
+&lt;li&gt;Second item&lt;/li&gt;
+&lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/* return 0 on error or return the data */
+char *cli_read(int c){
+    static char buf[512];
+
+    memset(buf, 0, 512);
+    if (read(c, buf, 511) &amp;lt; 0){
+        error = &amp;#34;read() error in cli_read()&amp;#34;;
+        return 0;
+    } else {
+        return buf;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;&lt;a href=&#34;http://localhost:1313/end-the-fed&#34;&gt;this is a testing link&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;img alt=&#34;alt text&#34; src=&#34;/troose.webp&#34;&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Syntax&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Header&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Title&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Paragraph&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Text&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;dl&gt;
+&lt;dt&gt;term&lt;/dt&gt;
+&lt;dd&gt;definition&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;p&gt;&lt;del&gt;The world is flat.&lt;/del&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Write the press release&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Update the website&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; Contact the media&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here&amp;rsquo;s a sentence with a footnote. &lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;What if something is in the way of these two?&lt;/p&gt;
+&lt;p&gt;i see how this goes&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;This is the footnote.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>End the Fed</title>
+      <link>/end-the-fed/</link>
+      <pubDate>Mon, 09 Sep 2024 23:42:44 -0500</pubDate>
+      
+      <guid>/end-the-fed/</guid>
+      <description>&lt;h1 id=&#34;hello-world&#34;&gt;Hello World!&lt;/h1&gt;
+&lt;h3 id=&#34;jack-sovern&#34;&gt;Jack Sovern&lt;/h3&gt;
+&lt;p&gt;This is my first attempt using Hugo. So far, I really love this! I think that I could absolutely use this for an entire website, and I think that that will be my next project. A portfolio of sorts&lt;/p&gt;
+&lt;p&gt;I think that the craziest part is the almost instant reloading. Like as soon as I am pressing the button, it&amp;rsquo;s saving it for me.
+Of course a lot of this is definitely due to my neovim&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;hello-world&#34;&gt;Hello World!&lt;/h1&gt;
+&lt;h3 id=&#34;jack-sovern&#34;&gt;Jack Sovern&lt;/h3&gt;
+&lt;p&gt;This is my first attempt using Hugo. So far, I really love this! I think that I could absolutely use this for an entire website, and I think that that will be my next project. A portfolio of sorts&lt;/p&gt;
+&lt;p&gt;I think that the craziest part is the almost instant reloading. Like as soon as I am pressing the button, it&amp;rsquo;s saving it for me.
+Of course a lot of this is definitely due to my neovim&lt;/p&gt;
+&lt;p&gt;I really need to get working on my lazy loading this shit is not okay&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve now realized that I Don&amp;rsquo;t need to get working on my lazy loading and that I can just
+use vim!&lt;/p&gt;
+&lt;h2 id=&#34;this-is-a-heading-2&#34;&gt;This is a heading 2&lt;/h2&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

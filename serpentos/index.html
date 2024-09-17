@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Serpentos :: jack&#39;s blog!</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Serpent OS: A new Linux distro Introduction In a world where more and more distros are just another spin of Ubuntu, Debian, or Arch, a new, independent distro making its way onto the scene is a real refresher. Every time that a new independent distro like the one we&rsquo;re going to be talking about today comes out, it brings with it some major changes to the way that people think about distros. This has happened time and time again, from when Void Linux came out, rethinking the init system, to when NixOS rethought the way that operating systems could be installed and work. However, these famously independent distributions came out many years ago. Actually, they came out so many years ago that it was before I was even born! I hope that doesn&rsquo;t make some of you feel old, but it&rsquo;s true. A Linux distro hasn&rsquo;t come out in many years that has completely changed the way that people think of operating systems, but I believe that can change with SerpenOS.
+" />
+<meta name="keywords" content="" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="/serpentos/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="/css/buttons.min.2bc533403a27dfe0e93105a92502b42ce4587e2e4a87d9f7d349e51e16e09478.css">
+
+  
+  <link rel="stylesheet" href="/css/code.min.00125962708925857e7b66dbc58391d55be1191a3d0ce2034de8c9cd2c481c36.css">
+
+  
+  <link rel="stylesheet" href="/css/fonts.min.90c955c31dd7c0e05aae3d4f583d4d8a2af799d69c961337eaf2a825063a55dd.css">
+
+  
+  <link rel="stylesheet" href="/css/footer.min.2e3eb191baee58dd05a9f0104ac1fab0827bca7c64dafe0b2579f934c33a1d69.css">
+
+  
+  <link rel="stylesheet" href="/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="/css/header.min.b6fb4423cf82a9f9d7abc9cd010223fa3d70a6526a3f28f8e17d814c06e18f9e.css">
+
+  
+  <link rel="stylesheet" href="/css/main.min.1d8be2dd1b5de9fdaed058c8c59fcf4485f36619574abfb47ed0cfda4812c16d.css">
+
+  
+  <link rel="stylesheet" href="/css/menu.min.83637a90d903026bc280d3f82f96ceb06c5fc72b7c1a8d686afb5bbf818a29f7.css">
+
+  
+  <link rel="stylesheet" href="/css/pagination.min.82f6400eae7c7c6dc3c866733c2ec0579e4089608fea69400ff85b3880aa0d3c.css">
+
+  
+  <link rel="stylesheet" href="/css/post.min.fc74ca360273c1d828da3c02b8174eba435607b369d98418ccc6f2243cd4e75d.css">
+
+  
+  <link rel="stylesheet" href="/css/prism.min.9023bbc24533d09e97a51a0a42a5a7bfe4c591ae167c5551fb1d2191d11977c0.css">
+
+  
+  <link rel="stylesheet" href="/css/syntax.min.cc789ed9377260d7949ea4c18781fc58959a89287210fe4edbff44ebfc1511b6.css">
+
+  
+  <link rel="stylesheet" href="/css/terminal.min.736caf886baa67df630c4cde30fbdc5115122eb74c6246f15a31401344bfa2f0.css">
+
+  
+  <link rel="stylesheet" href="/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Serpentos">
+<meta property="og:description" content="Serpent OS: A new Linux distro Introduction In a world where more and more distros are just another spin of Ubuntu, Debian, or Arch, a new, independent distro making its way onto the scene is a real refresher. Every time that a new independent distro like the one we&rsquo;re going to be talking about today comes out, it brings with it some major changes to the way that people think about distros. This has happened time and time again, from when Void Linux came out, rethinking the init system, to when NixOS rethought the way that operating systems could be installed and work. However, these famously independent distributions came out many years ago. Actually, they came out so many years ago that it was before I was even born! I hope that doesn&rsquo;t make some of you feel old, but it&rsquo;s true. A Linux distro hasn&rsquo;t come out in many years that has completely changed the way that people think of operating systems, but I believe that can change with SerpenOS.
+" />
+<meta property="og:url" content="/serpentos/" />
+<meta property="og:site_name" content="jack&#39;s blog!" />
+
+  <meta property="og:image" content="/og-image.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2024-09-16 18:44:01 -0500 CDT" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container full">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/serpentos">
+  <div class="logo">
+    jack&#39;s blog!
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/serpentos">SerpentOS</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/serpentos" >SerpentOS</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="/serpentos/">Serpentos</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2024-09-16</time><span class="post-reading-time">6 min read (1106 words)</span></div>
+
+  
+  
+
+
+  
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#backstory-on-serpent">Backstory on Serpent</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#tooling">Tooling</a></li>
+    <li><a href="#final-thoughts">Final Thoughts</a></li>
+  </ul>
+</nav>
+    </div>
+  
+
+  <div class="post-content"><div>
+        <h1 id="serpent-os-a-new-linux-distro">Serpent OS: A new Linux distro<a href="#serpent-os-a-new-linux-distro" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="introduction">Introduction<a href="#introduction" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>In a world where more and more distros are just another spin of Ubuntu, Debian, or Arch, a new, independent distro
+making its way onto the scene is a real refresher. Every time that a new independent distro like the one we&rsquo;re going to
+be talking about today comes out, it brings with it some major changes to the way that people think about distros. This
+has happened time and time again, from when <a href="https://voidlinux.org/">Void Linux</a> came out, rethinking the
+init system, to when NixOS rethought the way that operating systems could be installed and work. However, these famously
+independent distributions came out many years ago. Actually, they came out so many years ago that it was before I was
+even born! I hope that doesn&rsquo;t make some of you feel old, but it&rsquo;s true. A Linux distro hasn&rsquo;t come out in many years
+that has completely changed the way that people think of operating systems, but I believe that can change with SerpenOS.</p>
+<h2 id="backstory-on-serpent">Backstory on Serpent<a href="#backstory-on-serpent" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Serpent was initally announced somewhere in late summer 2020 by Ikey Doherty, the current CEO of <a href="https://github.com/lispysnake">Lispy Snake</a>
+and one of the creators of the <a href="https://getsol.us/">Solus</a> operating system, started full development somewhere around
+July 2020. Now, a little less than 4 years later, some prealpha ISOs of the operating system are finally beginning to
+circulate. Yes, it took a long time for them to get these ISOs going, but I don&rsquo;t blame them. SerpentOS is packed with
+amazing features, and I&rsquo;m really excited to go through them all.</p>
+<h2 id="features">Features<a href="#features" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>In the initial announcement by Ikey Doherty, he listed several goals for this new operating system, which I would like
+to go through here.</p>
+<p>One of the first things announced was the <code>systemd init system</code>. Now I know many people have their opinions on their
+init systems, but I think that this is a good thing. Not working on a new init system saved so much time that was spent
+in many other, very useful places. Also, the final benefit of using systemd as their init is the amount of tooling that is
+<em>already available</em> for them to pick up and use to create the most stable and easy-to-use system they can.</p>
+<p>Another exciting feature is <code>wayland-only</code> support, another slightly controversial topic. I am totally in favor of
+this change, and I really do think that it is time for X to go the way of the dinosaurs. X is a relic of the past, and
+as we move forward, we need to realize that we can leave things behind.</p>
+<p>The final thing I will touch on is the adoption of clang and llvm-based infrastructure all the way down. And yes, this
+means no GNUtils, down to using musl instead of libc. This is great not only for diversity in the linux ecosystem, but
+for schooling all the people that think they&rsquo;re clever by correcting you on your usage GNU + Linux, a scenario that no
+doubt many of you have experienced before:</p>
+<blockquote>
+<p>&ldquo;I use Linux as my operating system,&rdquo; I state proudly to the unkempt, bearded man. He swivels around in his desk chair
+with a devilish gleam in his eyes, ready to mansplain with extreme precision. &ldquo;Actually&rdquo;, he says with a grin,
+&ldquo;Linux is just the kernel. You use GNU+Linux!&rsquo; I don&rsquo;t miss a beat and reply with a smirk,
+&ldquo;I use Serpent, a distro that doesn&rsquo;t include the GNU coreutils, or any other GNU code. It&rsquo;s Linux, but it&rsquo;s not GNU+Linux.&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>The smile quickly drops from the man&rsquo;s face. His body begins convulsing and he foams at the mouth and drops to the floor with a sickly thud. As he writhes around he screams &ldquo;I-IT WAS COMPILED WITH GCC! THAT MEANS IT&rsquo;S STILL GNU!&rdquo; Coolly, I reply &ldquo;If windows was compiled with gcc, would that make it GNU?&rdquo; I interrupt his response with &ldquo;-and work is being made on the kernel to make it more compiler-agnostic. Even you were correct, you wont be for long.&rdquo;</p>
+</blockquote>
+<blockquote>
+<p>With a sickly wheeze, the last of the man&rsquo;s life is ejected from his body. He lies on the floor, cold and limp, never to correct again.</p>
+</blockquote>
+<h2 id="tooling">Tooling<a href="#tooling" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>No surprises here, all the tooling is in Rust. Honestly, I love it. Rust is such a safe language, and I personally prefer
+the programs that keep my computer running to be safe, and crash-resistent. The team at Lispy Snake has done a great job
+with these tools and I think that they need a bit more recognition for it.</p>
+<p>The first piece of tooling is the <a href="https://serpentos.com/moss/">moss</a> package manager. This package manager is really
+interesting regarding the way that it handles transactions (what they are calling package installations).
+According to the website, moss <code>manages the entire operating system via content addressable storage. Every single file from every package is deduplicated via a hash-based addressing scheme in the moss store, allowing us to produce new system roots on the fly.</code>
+What this can mean for the average user is that each time they install a package, you can create a new root filesystem
+to install the package directly into, which can make it a lot easier to revert all changes, a great way to minimize
+problems.</p>
+<p>Another interesting tool is <a href="https://serpentos.com/boulder/">boulder</a>. This is a build system, similiar to PKGBUILDS in
+Arch Linux that streamlines the package creation process significantly for developers.</p>
+<p>In these first releases, they are utilizing a tool called <a href="https://github.com/serpent-os/lichen">lichen</a> to deal with
+their installation. Even though it&rsquo;s very early days and I&rsquo;m not sure if it&rsquo;s going to make it into the final release,
+I do enjoy using it. It&rsquo;s a pretty CLI tool, and I&rsquo;m a huge sucker for a pretty CLI tool.</p>
+<p>Finally, they include a tool called <a href="https://github.com/serpent-os/blsforme">blsforme</a>, which (as I currently understand)
+is their replacement for GRUB, or their bootloader. This could be completely incorrect, as I am not very familiar with
+this tool.</p>
+<h2 id="final-thoughts">Final Thoughts<a href="#final-thoughts" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>I am really excited to see how this project turns out. Personally, I have been daily driving it for the last few weeks,
+using the COSMIC desktop &amp; its tiling features. I love it, but am definitely missing the community aspect of the AUR.
+I love the independence of the operating system, and I think that it deserves a lot more attention from the community.</p>
+<p>If you liked the post, contact me at <a href="mailto:jharlancheese01@gmail.com">jharlancheese01@gmail.com</a>! I&rsquo;d love to hear what you thought of my first blog post.
+I really put a lot of work into this project, and I&rsquo;m glad that I was able to complete this first thing. Hopefully,
+there will be many more.</p>
+
+      </div></div>
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2024 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
